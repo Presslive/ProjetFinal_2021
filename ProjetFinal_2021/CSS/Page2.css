@@ -1,0 +1,205 @@
+		/* Page2 */
+
+.container-page-2 {
+	background-color: #FAFAFA;
+	margin: 0 10%;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "Header Header Header" "cr2 cr2 billetPrix" "lieu lieu achat1" "nav-gauche article-destination NewYork" "Footer Footer Footer";
+}
+
+#NosDestinations2 {
+	width: 650px;
+	margin: 0;
+	float: left;
+	margin-top: 15px;
+	margin-left: 15px;
+	grid-area: cr2;
+}
+
+#NosDestinations2 img {
+	border-radius: 20px;
+}
+
+.lieu-inin {
+	display: flex;
+	margin-top: 15px;
+	margin-left: 0;
+	width: 100%;
+	height: 100px;
+	align-items: center;
+}
+
+.lieu {
+	width: 80%;
+	grid-area: lieu;
+}
+
+.Header {
+	grid-area: Header;
+	margin-bottom: 20px;
+}
+
+.lieu h1 {
+	font-size: 1.5em;
+	padding: 5px;
+	margin: 20px;
+}
+
+#lieu-inner {
+	background-color: #03A9F4;
+	border-radius: 3px;
+	padding: 5px;
+	transition: transform .2s;
+	cursor: pointer;
+}
+
+#lieu-inner:hover {
+	transform: scale(1.5);
+	color: white;
+}
+
+.achat {
+	grid-area: achat1;
+	width: 80%;
+	cursor: pointer;
+	background-color: #03A9F4;
+	border-radius: 20px;
+	padding: 5px;
+	transition: transform .1s;
+}
+
+.achat h1 {
+	font-size: 1.8em;
+	padding: 5px;
+	margin: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.achat:hover {
+	transform: scale(1.1);
+	color: white;
+}
+
+.nav-gauche {
+	grid-area: nav-gauche;
+	width: 50%;
+	padding: 30px;
+	margin-top: 15px;
+	margin-left: 15px;
+	border-radius: 10px;
+	background-color: #03A9F4;
+}
+
+.nav-gauche li {
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	padding: 7px;
+	margin-left: 30px;
+	transition: transform .1s;
+	cursor: pointer;
+}
+
+.nav-gauche li:hover {
+	background-color: white;
+	border-radius: 10px;
+	list-style: none;
+	transform: scale(1.06);
+}
+
+.article-destination {
+	grid-area: article-destination;
+	width: 100%;
+	margin-top: 50px;
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "Paris2 Dubai2" "Tokyo2 Tokyo2"
+}
+
+.Paris2 {
+	grid-area: Paris2;
+	text-align: justify;
+}
+
+.Dubai2 {
+	grid-area: Dubai2;
+	text-align: justify;
+}
+
+.Tokyo2 {
+	grid-area: Tokyo2;
+	text-align: justify;
+}
+
+.article-destination h3 {
+	font-weight: bold;
+}
+
+.NewYork2 {
+	grid-area: NewYork;
+	text-align: justify;
+	margin-top: 50px;
+	width: 150px;
+	margin-left: 45px;
+}
+
+.NewYork2 h3 {
+	font-weight: bold;
+}
+
+.ajout {
+	transform: scale(1.07);
+	transition: transform .5s;
+}
+
+.ajout2 {
+	border-top: 1px solid #03A9F4;
+}
+
+.Footer {
+	margin-top: 25px;
+	grid-area: Footer;
+}
+
+@media only screen and (min-width:773px)and (max-width: 1200px) {
+	container-page-2 {
+		background-color: #FAFAFA;
+		position: relative;
+		margin: 0 10%;
+		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "Header Header " "cr2 cr2" "lieu lieu" "article-destination ." "billetPrix ." "Footer Footer ";
+	}
+	.article-destination {
+		grid-area: article-destination;
+		width: 100%;
+		margin-top: 50px;
+		display: grid;
+		grid-gap: 50px;
+		grid-template-columns: 1fr;
+		grid-template-areas: "Paris2" "Dubai2" "Tokyo2"
+	}
+	.nav-gauche, .carousel, .achat {
+		display: none;
+	}
+	.lieu {
+		margin-top: 40px;
+	}
+	.menu {
+		position: absolute;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.inner {
+		width: 40px;
+	}
+	.lieu-inin {
+		width: 80%;
+	}
+}

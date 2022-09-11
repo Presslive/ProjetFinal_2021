@@ -1,0 +1,49 @@
+			/* Page4 */
+
+.container-page-4 {
+	background-color: #FAFAFA;
+	position: relative;
+	margin: 0 10%;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "Header Header Header" "cr2 cr2 achat2" " inscription inscription nav-gauche" "Footer Footer Footer";
+}
+
+.nav-gauche {
+	margin-left: auto;
+	margin-right: 0;
+	grid-area: nav-gauche;
+}
+
+.inscription1 {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.Inscription {
+	grid-area: inscription;
+	margin-right: 0;
+	margin-left: 30%;
+}
+
+@media only screen and (min-width:773px)and (max-width: 1200px) {
+	.container-page-4 {
+		background-color: #FAFAFA;
+		position: relative;
+		margin: 0 10%;
+		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "Header Header " "cr2 cr2 " " inscription inscription " "Footer Footer ";
+	}
+	.nav-gauche, .carousel, .achat-p2, .inscription1 {
+		display: none;
+	}
+	.menu {
+		position: absolute;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+}

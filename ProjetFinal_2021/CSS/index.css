@@ -1,0 +1,544 @@
+
+				/* Index pour les MediaQueries */
+*{
+		margin: 0;
+		padding:0 ;
+
+		font-family: 'lato';
+		
+}
+html, body{
+	
+	background:#658291 ;
+	
+		
+}
+
+
+
+
+h1, h2,h3{
+	font-size:2em;
+}
+
+a {
+	color: inherit;
+}
+
+@media only screen and (min-width:773px)and (max-width: 1200px){
+   
+	html, body{
+	
+		height: 100%;
+		
+			
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: 'lato';
+	}
+	
+	html, body {
+		background: #658291;
+	}
+	
+	h1, h2, h3 {
+		font-size: 2em;
+	}
+	
+	a {
+		color: inherit;
+	}
+	
+	@media only screen and (min-width:773px)and (max-width: 1200px) {
+		html, body {
+			height: 100%;
+		}
+		.container {
+			background-color: #FAFAFA;
+			min-height: 100%;
+			position: relative;
+			margin-right: 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-areas: "Header Header Header" "carousel carousel  contenu1" "contenu2 contenu3  ." "contenu4 contenu4 contenu4" "Footer Footer Footer";
+		}
+		.container-page-2 {
+			background-color: #FAFAFA;
+			margin: 0 10%;
+			position: relative;
+			padding: 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-areas: "Header Header Header" "cr2 cr2 billetPrix" "lieu lieu achat1" "nav-gauche article-destination NewYork" "Footer Footer Footer";
+		}
+		.container-page-3 {
+			background-color: #FAFAFA;
+			margin: 0 10%;
+			padding: 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-areas: "Header Header Header" "cr2 cr2 achat2" "nav-gauche section-p3 contenu2-p3" "Footer Footer Footer";
+		}
+		.container-page-4 {
+			background-color: #FAFAFA;
+			margin: 0 10%;
+			position: relative;
+			padding: 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-areas: "Header Header Header" "cr2 cr2 achat2" " inscription inscription nav-gauche" "Footer Footer Footer";
+		}
+		#NosDestinations2 {
+			width: 650px;
+			position: absolute;
+			margin: 0;
+			float: left;
+			margin-top: 15px;
+			margin-left: 15px;
+			grid-area: cr2;
+		}
+		.menu {
+			position: absolute;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		.achat {
+			position: absolute;
+			grid-area: achat1;
+			width: 80%;
+			cursor: pointer;
+			background-color: #03A9F4;
+			border-radius: 20px;
+			padding: 5px;
+			transition: transform .1s;
+		}
+		.contenu1 {
+			display: none;
+		}
+		.footer-basic {
+			position: absolute;
+			width: 100%;
+			padding: 10px;
+			margin: 0;
+			background-color: #03A9F4;
+			color: #4b4c4d;
+		}
+		.m-gauche {
+			float: right;
+		}
+		.m-droite {
+			float: left;
+		}
+	}
+	
+	@media only screen and (min-width:100px)and (max-width: 772px) {
+		.container {
+			background-color: #FAFAFA;
+			position: relative;
+			margin: 0 0 0 0;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-areas: "Header " "contenu3 " "contenu2 " "contenu4 " "Footer ";
+		}
+		.container-page-2 {
+			background-color: #FAFAFA;
+			margin: 0;
+			position: relative;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-areas: "Header" "cr2 " "lieu" "article-destination" "achat1" "Footer ";
+		}
+		.container-page-3 {
+			background-color: #FAFAFA;
+			position: relative;
+			margin: 0;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-areas: "Header" "cr2" "section-p3" "contenu2-p3" "Footer";
+		}
+		.container-page-4 {
+			background-color: #FAFAFA;
+			position: relative;
+			margin: 0;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-areas: "Header" "cr2 " " inscription" "Footer";
+		}
+		.article-destination {
+			grid-area: article-destination;
+			width: 80%;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			display: grid;
+			grid-gap: 40px;
+			grid-template-columns: 1fr;
+			justify-content: end;
+			grid-template-areas: "Paris2 " "Dubai2 " "Tokyo2 " "Footer";
+		}
+		#main-page4 {
+			width: 300px;
+		}
+		.Inscription {
+			margin: 0;
+		}
+		.Paris2, .Dubai2, .Tokyo2 {
+			margin: 0 30%;
+		}
+		.nav-gauche, .NewYork2, .contenu1, .achat-p2, .inscription1 {
+			display: none;
+		}
+		#NosDestinations2 {
+			width: 70%;
+		}
+		#NosDestinations2 img {
+			border-radius: 0px;
+		}
+		.text1 {
+			width: 50%;
+		}
+		.contenu2, .contenu4, .contenu3 {
+			width: 80%;
+			margin-top: 30px;
+		}
+		#NosDestinations {
+			position: absolute;
+			width: 90%;
+			height: 0px;
+			margin: 0;
+			margin-top: 15px;
+			margin-left: 15px;
+			grid-area: carousel;
+		}
+		#NosDestinations2 {
+			margin-top: 110px;
+		}
+		#cacher, .carousel {
+			display: none;
+		}
+		.m-droite {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: auto;
+			background-color: #E91E63;
+			transform: translateY(-100%);
+			transition: all 0.3s ease-in-out;
+		}
+		.link {
+			display: block;
+			text-align: center;
+			padding: 0;
+			margin: auto;
+			height: 55px;
+			width: 200px;
+		}
+		.m-gauche {
+			float: left;
+		}
+		.m-nav-toggle {
+			display: flex;
+		}
+		.footer-basic {
+			position: absolute;
+			width: 100%;
+			padding: 10px;
+			margin: 0;
+			background-color: #03A9F4;
+			color: #4b4c4d;
+		}
+		.menu {
+			position: absolute;
+			width: 100%;
+			margin-bottom: 110px;
+			padding: 0;
+		}
+	}
+	
+	
+	.container {
+		background-color: #FAFAFA;
+		min-height: 100%;
+		position: relative;
+		margin-right:0;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr  ;
+		grid-template-areas: 
+		"Header Header Header"
+		"carousel carousel  contenu1"
+		"contenu2 contenu3  ."
+		"contenu4 contenu4 contenu4"
+		"Footer Footer Footer";
+		
+		
+	}
+
+	.container-page-2{
+		background-color: #FAFAFA;
+		margin:0 10% ;
+		position: relative;
+		padding:0;
+		display:grid;
+		grid-template-columns: 1fr 1fr  1fr ;
+		grid-template-areas: 
+		"Header Header Header"
+		"cr2 cr2 billetPrix"
+		"lieu lieu achat1"
+		"nav-gauche article-destination NewYork"
+		"Footer Footer Footer";
+	}
+	.container-page-3{
+		background-color: #FAFAFA;
+		margin: 0 10%;
+		padding:0;
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr ;
+		grid-template-areas: "Header Header Header" "cr2 cr2 achat2" 
+		"nav-gauche section-p3 contenu2-p3" "Footer Footer Footer";
+	}
+
+	.container-page-4{
+		background-color: #FAFAFA;
+		margin: 0 10%;
+		position: relative;
+		padding:0;
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr ;
+		grid-template-areas: "Header Header Header" "cr2 cr2 achat2" " inscription inscription nav-gauche" "Footer Footer Footer";
+	}
+	
+	
+	
+	#NosDestinations2{
+		width: 650px;
+		position: absolute;
+		
+		margin: 0 ;
+		float:left;
+		margin-top: 15px;
+		margin-left: 15px;
+		grid-area: cr2;
+		
+	}
+	
+	.menu{
+		position: absolute;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		
+	}
+	.achat{
+		position: absolute;
+		grid-area: achat1;
+		width:80%;
+		cursor:pointer;
+		background-color:#03A9F4;
+		border-radius: 20px;
+		padding:5px;
+		transition: transform .1s;
+		
+	}
+	.contenu1{
+		display: none;
+	}
+	.footer-basic {
+		position: absolute;
+		width: 100%;
+		padding:10px;
+		margin: 0;
+		background-color:#03A9F4;
+		color:#4b4c4d;
+	  }
+    .m-gauche{
+        float: right;
+    }
+    .m-droite{
+        float: left;
+    }
+}
+
+
+@media only screen and (min-width:100px)and (max-width: 772px) {
+	
+	
+	
+	.container {
+		background-color: #FAFAFA;
+		position: relative;
+		margin:0 0 0 0 ;
+		display: grid;
+		grid-template-columns: 1fr  ;
+		
+		grid-template-areas: 
+		"Header "
+		"contenu3 "
+		"contenu2 "
+		"contenu4 "
+		"Footer ";
+		
+		
+		
+	}
+	
+	.container-page-2{
+		background-color: #FAFAFA;
+		margin:0  ;
+		position: relative;
+		
+		display:grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"Header"
+		"cr2 "
+		"lieu"
+		"article-destination"
+		"achat1"
+		"Footer ";
+		
+	}
+
+	.container-page-3{
+		background-color: #FAFAFA;
+		position: relative;
+
+		margin: 0 ;
+		
+		display:grid;
+		grid-template-columns: 1fr ;
+		grid-template-areas: "Header"
+		 "cr2" 
+		"section-p3"
+		"contenu2-p3" 
+		"Footer";
+	}
+
+	.container-page-4{
+		background-color: #FAFAFA;
+		position: relative;
+		margin: 0;
+		
+		display:grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: "Header" "cr2 " " inscription" "Footer";
+	}
+	
+	.article-destination{
+		grid-area: article-destination;
+		width:80%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		display:grid;
+		grid-gap: 40px;
+		grid-template-columns: 1fr ;
+		justify-content: end;
+		grid-template-areas: 
+		"Paris2 "
+		"Dubai2 "
+		"Tokyo2 "
+		"Footer";
+		
+	}
+
+	#main-page4{
+		width:300px;
+		
+	}
+	.Inscription{
+		margin:0;
+	}
+	.Paris2 ,.Dubai2,.Tokyo2 {
+		margin: 0 30%;
+		
+	}
+	
+	.nav-gauche ,.NewYork2,.contenu1,.achat-p2,.inscription1{
+		display: none;
+
+	}
+	#NosDestinations2{
+		width: 70%;
+	}
+	
+	
+
+	#NosDestinations2 img{
+		border-radius: 0px;
+		
+	}
+	.text1{
+		width: 50%;
+		
+	}
+	.contenu2,.contenu4,.contenu3{
+		width:80%;
+		margin-top: 30px;
+	}
+	#NosDestinations{
+		position: absolute;
+
+		width: 90%;
+		height: 0px;
+		margin: 0 ;
+		
+		margin-top: 15px;
+		margin-left: 15px;
+		grid-area: carousel;
+		
+	}
+	#NosDestinations2{
+		margin-top:110px;
+	}
+	
+	#cacher, .carousel{
+		display:none;
+	}
+
+    .m-droite{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width:100%;
+        height:auto;
+        background-color:#E91E63;
+        transform: translateY(-100%);
+        transition: all 0.3s ease-in-out;
+        
+
+    }
+    .link{
+        display:block;
+        text-align:center;
+        padding:0;
+        margin:auto;
+        height: 55px;
+        width: 200px;
+    }
+    .m-gauche{
+        float: left;
+    }
+    .m-nav-toggle{
+        display:flex;
+    }
+	.footer-basic {
+		position: absolute;
+		width: 100%;
+		padding:10px;
+		margin: 0;
+		background-color:#03A9F4;
+		color:#4b4c4d;
+	  }
+
+	  .menu{
+		position: absolute;
+		width: 100%;
+		margin-bottom: 110px;
+		padding: 0;
+		
+	}
+}

@@ -1,0 +1,91 @@
+
+		/* Page3 */
+
+.container-page-3 {
+	background-color: #FAFAFA;
+	margin: 0 10%;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "Header Header Header" "cr2 cr2 achat2" "nav-gauche section-p3 contenu2-p3" "Footer Footer Footer";
+}
+
+.achat-p2 {
+	grid-area: achat2;
+	width: 40%;
+	cursor: pointer;
+	background-color: #03A9F4;
+	border-radius: 20px;
+	padding: 5px;
+	transition: transform .1s;
+}
+
+.achat-p2 h1 {
+	font-size: 1.8em;
+	padding: 5px;
+	margin: 20px;
+	text-align: center;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	font-weight: bold;
+}
+
+.achat-p2:hover {
+	transform: scale(1.1);
+	color: white;
+}
+
+.section-p3 {
+	grid-area: section-p3;
+	margin-top: 80px;
+	width: 100%;
+}
+
+.boutton-p3 {
+	margin-right: 10px;
+}
+
+.checked {
+	color: orange;
+}
+
+.changementBordure {
+	border: 2px solid #03A9F4;
+}
+
+.changement-p3 {
+	background-color: #03A9F4;
+	color: black;
+	transform: scale(1.02);
+	transition: transform .3s;
+}
+
+.contenu2-p3 {
+	grid-area: contenu2-p3;
+	margin-top: 90px;
+	margin-left: 30px;
+	width: 80%;
+}
+
+@media only screen and (min-width:773px)and (max-width: 1200px) {
+	.container-page-3 {
+		background-color: #FAFAFA;
+		position: relative;
+		margin: 0 10%;
+		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 50px;
+		grid-template-areas: "Header Header" "cr2 cr2 " " section-p3 section-p3 " "contenu2-p3 contenu2-p3" "Footer Footer";
+	}
+	.nav-gauche, .carousel, .achat-p2 {
+		display: none;
+	}
+	.menu {
+		position: absolute;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+}
